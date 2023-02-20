@@ -1,8 +1,8 @@
 <h1 align="center">ToDo</h1>
 <p align="center">
-[![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
-[![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=plastic)](https://android-arsenal.com/api?level=18)
-![build](https://github.com/wisnukurniawan/Compose-ToDo/actions/workflows/build.yml/badge.svg)
+  <a href="https://www.android.com"><img alt="License" src="https://img.shields.io/badge/platform-Android-yellow.svg"/></a>
+  <a href="https://android-arsenal.com/api?level=21"><img alt="API" src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"/></a>
+  <img alt="API" src="https://github.com/wisnukurniawan/Compose-ToDo/actions/workflows/build.yml/badge.svg"/>
 </p>
 
 <p align="center">
@@ -14,16 +14,17 @@
 ### Light Mode
 </br>
 <p align="left">
- <a><img width="30%" height="180px"  src="preview/create_tasks.gif"></a>
- <a><img width="30%" height="180px"  src="preview/search.gif"></a>
- <a><img width="30%" height="180px"  src="preview/filter.png"></a>
- <a><img width="30%" height="180px"  src="preview/more_action.png"></a>
+ <a><img width="25%" height="420px"  src="preview/create_tasks.gif"></a>
+ <a><img width="25%" height="420px"  src="preview/search.gif"></a>
+ <a><img width="25%" height="420px"  src="preview/filter.gif"></a>
+ <a><img width="25%" height="420px"  src="preview/more_action.gif"></a>
 </p>
 </br>
+
 ### Dark Mode
 </br>
 <p align="left">
- <a><img width="30%" height="180px"  src="gifs/dark_mode.gif"></a>
+ <a><img width="25%" height="420px"  src="preview/dark_mode.gif"></a>
 </p>
 </br>
 
