@@ -28,25 +28,109 @@
 </p>
 </br>
 
-# Tech stack
-
-- [Kotlin](https://kotlinlang.org/): first class programming language for native Android development.
-- [Kotlin Coroutines](https://github.com/Kotlin/kotlinx.coroutines): structured concurrency.
-- [Kotlin Flows](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/): reactive communication.
-- [Material3](https://m3.material.io/): modern UI/UX guidelines and components.
-- [Jetpack Compose](https://developer.android.com/jetpack/compose): modern, declarative way of building UI in Kotlin.
-- [Jetpack Lifecycle](https://developer.android.com/topic/libraries/architecture/lifecycle): observe Android lifecycles and handle UI states upon the lifecycle changes.
-- [Jetpack ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel): manages UI-related data holder and lifecycle aware. Allows data to survive configuration changes such as screen rotations.
-- [Jetpack DataStore Preferences](https://developer.android.com/topic/libraries/architecture/datastore): uses Kotlin Coroutines and Flows to store data asynchronously, consistently, and transactionally.
-- [Room](https://developer.android.com/training/data-storage/room): SQLite abstraction and database solution.
-- [Dagger Hilt](https://dagger.dev/hilt/): first class dependency injection for native Android development.
-- [Compose Destinations](https://composedestinations.rafaelcosta.xyz/): a type-safe navigation for composables.
-
 # Architecture
 
 "ToDo" is based on the MVVM architecture pattern, Repository pattern, Mapper pattern.
 
 <img src="/preview/mvvm-pattern.png"/>
+
+
+## Built With 🛠
+- [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
+- [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - A coroutine is a concurrency design pattern that you can use on Android to simplify code that executes asynchronously.
+- [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) - Collection of libraries that help you design robust, testable, and maintainable apps.
+    - [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) - Data objects that notify views when the underlying database changes.
+    - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Stores UI-related data that isn't destroyed on UI changes.
+    - [ViewBinding](https://developer.android.com/topic/libraries/view-binding) - Generates a binding class for each XML layout file present in that module and allows you to more easily write code that interacts with views.
+    - [DataBinding](https://developer.android.com/topic/libraries/data-binding) - The Data Binding Library is a support library that allows you to bind UI components in your layouts to data sources in your app using a declarative format rather than programmatically.
+    - [Room](https://developer.android.com/topic/libraries/architecture/room) - SQLite object mapping library.
+- [Material Components for Android](https://github.com/material-components/material-components-android) - Modular and customizable Material Design UI components for Android.
+- [RecyclerView Animators](https://github.com/wasabeef/recyclerview-animators) - About
+  An Android Animation library which easily add itemanimator to RecyclerView items.
+
+<br>
+
+## Project Directory Structure
+```
+.
+├── app
+│   ├── src
+│   │   └── main
+|   |       ├──/java/com/example/todoapp
+│   │       │       ├── data
+│   │       │       │   ├── models
+│   │       │       │   │   ├── Priority.kt
+│   │       │       │   │   └── ToDoData.kt
+│   │       │       │   ├── repository
+│   │       │       │   │   └── ToDoRepository.kt
+│   │       │       │   ├── viewmodel
+│   │       │       │   │   └── ToDoViewModel.kt
+│   │       │       │   ├── Converter.kt
+│   │       │       │   ├── ToDoDao.kt
+│   │       │       │   └── ToDoDatabase.kt
+│   │       │       ├── fragments
+│   │       │       │   ├── add
+│   │       │       │   │   └── AddFragment.kt
+│   │       │       │   ├── list
+│   │       │       │   │   ├── adapter
+│   │       │       │   │   │   ├── ListAdapter.kt
+│   │       │       │   │   │   └── ToDoDiffUtil.kt
+│   │       │       │   │   ├── ListFragment.kt
+│   │       │       │   │   └── SwipeToDelete.kt
+│   │       │       │   ├── update
+│   │       │       │   │   └── UpdateFragment.kt
+│   │       │       │   ├── BindingAdapters.kt
+│   │       │       │   └── SharedViewModel.kt
+│   │       │       ├── utils
+│   │       │       │   └── Utils.kt
+│   │       │       └── MainActivity.kt
+│   │       ├── res
+│   │       │   ├── anim
+│   │       │   │   ├── from_left.xml
+│   │       │   │   ├── from_right.xml
+│   │       │   │   ├── to_left.xml
+│   │       │   │   └── to_right.xml
+│   │       │   ├── drawable
+│   │       │   │   ├── custom_input.xml
+│   │       │   │   ├── ic_add.xml
+│   │       │   │   ├── ic_check.xml
+│   │       │   │   ├── ic_launcher_background.xml
+│   │       │   │   ├── ic_no_data.xml
+│   │       │   │   ├── ic_save.xml
+│   │       │   │   ├── ic_search.xml
+│   │       │   │   └── item_background.xml
+│   │       │   ├── layout
+│   │       │   │   ├── activity_main.xml
+│   │       │   │   ├── fragment_add.xml
+│   │       │   │   ├── fragment_list.xml
+│   │       │   │   ├── fragment_update.xml
+│   │       │   │   └── row_layout.xml
+│   │       │   ├── menu
+│   │       │   │   ├── add_fragment_menu.xml
+│   │       │   │   ├── list_fragment_menu.xml
+│   │       │   │   └── update_fragment_menu.xml
+│   │       │   ├── navigation
+│   │       │   │   └── my_nav.xml
+│   │       │   └── values
+│   │       │       ├── colors.xml
+│   │       │       ├── strings.xml
+│   │       │       └── themes.xml
+│   │       └── AndroidManifest.xml
+│   ├── build.gradle
+│   └── proguard-rules.pro
+├── gradle
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── build.gradle
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── LICENSE
+├── README.MD
+└── settings.gradle
+```
+<br>
 
 # About
 

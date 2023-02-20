@@ -63,7 +63,7 @@ fun Splash(offsetState: Dp, alphaState: Float) {
         ) {
         Image(
             modifier = Modifier
-                .size(LOGO_HEIGHT)
+                .size(200.dp)
                 .offset(y = offsetState)
                 .alpha(alpha = alphaState),
             painter = painterResource(id = getLogo()),
