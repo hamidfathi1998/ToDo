@@ -58,24 +58,15 @@ Personally, I use ToDo app to save the urls of articles that I plan to read late
 
 - Add, edit and delete tasks.
 - Undo deleted tasks.
-- Mark tasks as completed. Completed tasks have "Checked/Done" indicator and it is possible to hide them from list.
-- Mark tasks as "Important". Important tasks are listed first and they will have red "Warning" indicator.
-- Hide completed tasks from the list.
-- Sort tasks by name and by created date.
-- Your preferences are saved.
+- Sort tasks by priority.
 - Search for your tasks easily.
 - Delete all tasks at once, delete all completed tasks at once, or delete a task by swiping it away.
 - Beautiful animations and indicators.
 - Dark/Light theme support.
-- Dynamic theme support.
-- Multiple language support.
 - Multiple screen sizes support.
 - Light that is less than 2 MB.
 - Works without the internet.
-- Simplicity that has only five screens.
-- Adaptive screens that change according to screen orientation.
-- Completely robust to process death.
-- Completely robust to configuration change.
+- Simplicity that has only 2 screens.
 
 ## If this project helps you in anyway, show your love :heart: by putting a :star: on this project :v:
 
